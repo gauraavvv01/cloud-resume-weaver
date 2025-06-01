@@ -39,6 +39,11 @@ const Skills = () => {
       skills: [
         { name: 'AWS', level: 80 },
         { name: 'Azure', level: 75 },
+        { name: 'Squarespace', level: 85 },
+        { name: 'WAF', level: 80 },
+        { name: 'DOSS', level: 75 },
+        { name: 'ADF', level: 80 },
+        { name: 'Azure APIM', level: 75 },
         { name: 'Power BI', level: 90 },
         { name: 'Tableau', level: 85 },
         { name: 'Git/GitHub', level: 90 },

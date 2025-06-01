@@ -1,15 +1,35 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import { Award, ExternalLink } from 'lucide-react';
 
 const Certificates = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    // Auto-slide functionality
+    const interval = setInterval(() => {
+      if (api.canScrollNext()) {
+        api.scrollNext();
+      } else {
+        api.scrollTo(0);
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
+
   const certificates = [
     {
       title: 'Google Certified: Bits & Bytes of Computer Networking',
@@ -94,7 +114,14 @@ const Certificates = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
-          <Carousel className="w-full">
+          <Carousel 
+            className="w-full"
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
             <CarouselContent className="-ml-2 md:-ml-4">
               {certificates.map((cert, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">

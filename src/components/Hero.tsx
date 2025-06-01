@@ -45,6 +45,13 @@ const Hero = () => {
     return () => clearTimeout(timer);
   }, [displayText, isDeleting, currentRoleIndex, typeSpeed, roles]);
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
       {/* Animated background */}
@@ -95,7 +102,7 @@ const Hero = () => {
 
                 <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto leading-relaxed">
                   B.Tech CSE student at VIT Bhopal with expertise in MERN stack development, 
-                  Machine Learning, and Data Analytics • CGPA: 9.04/10.0
+                  Machine Learning, and Data Analytics
                 </p>
 
                 {/* Contact info */}
@@ -117,12 +124,15 @@ const Hero = () => {
 
               {/* Action buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   <Download className="mr-2" size={20} />
                   {/* PLACE YOUR RESUME DOWNLOAD LINK HERE */}
                   Download Resume
                 </Button>
-                <Button variant="outline" className="px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 border-gray-600 text-gray-300 hover:bg-gray-800">
+                <Button 
+                  onClick={scrollToContact}
+                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                >
                   <Mail className="mr-2" size={20} />
                   Contact Me
                 </Button>
@@ -145,8 +155,8 @@ const Hero = () => {
               {/* Stats */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-gray-700">
-                  <div className="text-2xl font-bold text-blue-400 mb-1">9.04</div>
-                  <div className="text-gray-400 text-sm">CGPA</div>
+                  <div className="text-2xl font-bold text-blue-400 mb-1">Cloud</div>
+                  <div className="text-gray-400 text-sm">AWS/Azure</div>
                 </div>
                 <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-gray-700">
                   <div className="text-2xl font-bold text-purple-400 mb-1">MERN</div>
