@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Section */}
@@ -20,21 +20,27 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
             <nav className="space-y-2">
-              <a href="#about" className="block text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#about" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 About
               </a>
-              <a href="#skills" className="block text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#education" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                Education
+              </a>
+              <a href="#skills" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 Skills
               </a>
-              <a href="#experience" className="block text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#experience" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 Experience
               </a>
-              <a href="#projects" className="block text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#achievements" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                Achievements
+              </a>
+              <a href="#projects" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 Projects
               </a>
-              <a href="#contact" className="block text-gray-400 hover:text-white transition-colors duration-300">
+              <a href="#contact" className="block text-gray-400 hover:text-blue-400 transition-colors duration-300">
                 Contact
               </a>
             </nav>
@@ -42,24 +48,24 @@ const Footer = () => {
 
           {/* Connect Section */}
           <div className="text-center md:text-right">
-            <h4 className="text-lg font-semibold mb-4">Let's Connect</h4>
+            <h4 className="text-lg font-semibold mb-4 text-white">Let's Connect</h4>
             <div className="flex justify-center md:justify-end space-x-4 mb-4">
               {/* PLACE YOUR SOCIAL MEDIA LINKS HERE */}
               <a
                 href="#"
-                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform"
+                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform border border-gray-700"
               >
                 <Github size={20} />
               </a>
               <a
                 href="#"
-                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform"
+                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform border border-gray-700"
               >
                 <Linkedin size={20} />
               </a>
               <a
                 href="mailto:gauraavvv01@gmail.com"
-                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform"
+                className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform border border-gray-700"
               >
                 <Mail size={20} />
               </a>
