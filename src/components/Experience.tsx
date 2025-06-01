@@ -5,21 +5,34 @@ import { MapPin, Calendar, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'SDW Intern',
-      company: 'Canary Hiring Technology',
-      location: 'Hyderabad, India',
-      duration: '2024 - Present',
+      title: 'Project Lead Intern',
+      company: 'BlueStock Fintech',
+      location: 'Mumbai, India',
+      duration: 'Dec 2024 - Feb 2025',
       description: [
-        'Managed AWS and Azure cloud infrastructure for scalable applications',
-        'Implemented web deployment strategies using Squarespace platform',
-        'Worked with DOSS (Distributed Object Storage Service) framework for data management',
-        'Configured WAF (Web Application Firewall) for enhanced security',
-        'Utilized ADF Azure (Azure Data Factory) for data integration and transformation',
-        'Collaborated with cross-functional teams to deliver cloud-based solutions',
+        'Managed a team of 15 members, coordinating tasks and ensuring effective communication',
+        'Led the entire development process from planning to deployment',
+        'Contributed as a frontend engineer, implementing user interfaces',
+        'Optimized user experiences and ensured website responsiveness across various devices',
+        'Ensured project met deadlines and quality standards',
       ],
-      technologies: ['AWS', 'Azure', 'Squarespace', 'DOSS', 'WAF', 'ADF Azure', 'Cloud Security'],
+      technologies: ['React', 'JavaScript', 'Frontend Development', 'Team Leadership', 'Project Management'],
     },
-    // Add more experiences here as needed
+    {
+      title: 'Data Analyst Intern',
+      company: 'Null Classes',
+      location: 'Remote',
+      duration: 'Aug 2024 - Oct 2024',
+      description: [
+        'Led transition to paperless practice with electronic booking system',
+        'Reduced labor costs by 30% and overhead by 10%',
+        'Analyzed data from 25,000 users and enhanced Tableau dashboards',
+        'Guided marketing and product strategies through data insights',
+        'Increased app engagement by 2x and reduced drop-off rate by 30%',
+        'Tripled social media shares through strategic analysis',
+      ],
+      technologies: ['Tableau', 'Data Analysis', 'Dashboard Development', 'Marketing Analytics', 'User Engagement'],
+    },
   ];
 
   return (
@@ -28,7 +41,7 @@ const Experience = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Work Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional experience in software development, cloud computing, and web deployment.
+            Professional experience in project leadership, data analytics, and full-stack development.
           </p>
         </div>
 
@@ -96,7 +109,7 @@ const Experience = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
             <h3 className="text-xl font-bold mb-4">Looking for Opportunities</h3>
             <p className="text-gray-600 mb-6">
-              I'm actively seeking new challenges in software development, cloud engineering, 
+              I'm actively seeking new challenges in software development, data analytics, 
               and full-stack development roles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

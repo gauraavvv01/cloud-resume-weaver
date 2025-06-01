@@ -65,8 +65,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              {/* PLACE YOUR NAME HERE */}
-              Your Name
+              Gaurav Gupta
             </span>
           </h1>
           
@@ -79,8 +78,8 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Software Development Engineer specializing in Cloud Technologies, 
-            Web Development, and Problem Solving
+            B.Tech CSE student at VIT Bhopal with expertise in MERN stack development, 
+            Machine Learning, and Data Analytics
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -103,23 +102,23 @@ const Hero = () => {
             <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-110 transform">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-110 transform">
+            <a href="mailto:gauraavvv01@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors duration-300 hover:scale-110 transform">
               <Mail size={24} />
             </a>
           </div>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="text-3xl font-bold text-blue-600 mb-2">200+</div>
-              <div className="text-gray-600">LeetCode Problems Solved</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">9.04</div>
+              <div className="text-gray-600">CGPA at VIT Bhopal</div>
             </div>
             <div className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="text-3xl font-bold text-purple-600 mb-2">100+</div>
-              <div className="text-gray-600">GeeksForGeeks Problems</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">MERN</div>
+              <div className="text-gray-600">Full Stack Developer</div>
             </div>
             <div className="text-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="text-3xl font-bold text-green-600 mb-2">Cloud</div>
-              <div className="text-gray-600">AWS & Azure Expert</div>
+              <div className="text-3xl font-bold text-green-600 mb-2">ML</div>
+              <div className="text-gray-600">Data Science Expert</div>
             </div>
           </div>
         </div>

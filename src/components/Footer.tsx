@@ -10,12 +10,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              {/* PLACE YOUR NAME HERE */}
-              Your Name
+              Gaurav Gupta
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Software Development Engineer passionate about creating innovative solutions 
-              with cloud technologies and modern web development.
+              B.Tech CSE student at VIT Bhopal passionate about creating innovative solutions 
+              with MERN stack, machine learning, and data analytics.
             </p>
           </div>
 
@@ -59,15 +58,20 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="mailto:gauraavvv01@gmail.com"
                 className="bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors duration-300 hover:scale-105 transform"
               >
                 <Mail size={20} />
               </a>
             </div>
             <p className="text-gray-400 text-sm">
-              {/* PLACE YOUR EMAIL HERE */}
-              your.email@example.com
+              gauraavvv01@gmail.com
+            </p>
+            <p className="text-gray-400 text-sm">
+              +91 7987432344
+            </p>
+            <p className="text-gray-400 text-sm">
+              Sagar, India
             </p>
           </div>
         </div>
@@ -75,7 +79,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Your Name. All rights reserved.
+              © 2024 Gaurav Gupta. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm flex items-center">
               Made with <Heart className="mx-1 text-red-500" size={16} /> using React & Tailwind CSS

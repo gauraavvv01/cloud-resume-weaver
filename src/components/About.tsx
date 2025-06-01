@@ -9,8 +9,8 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionate Software Development Engineer with expertise in cloud technologies, 
-            web development, and a strong problem-solving background.
+            B.Tech CSE student at VIT Bhopal with a passion for full-stack development, 
+            machine learning, and data analytics.
           </p>
         </div>
 
@@ -18,19 +18,17 @@ const About = () => {
           <div className="animate-fade-in">
             <h3 className="text-2xl font-bold mb-6">My Journey</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I'm a dedicated Software Development Engineer with a passion for creating scalable 
-              solutions and solving complex problems. My experience spans across cloud platforms, 
-              web development, and competitive programming.
+              I'm a dedicated B.Tech Computer Science student at VIT Bhopal with a strong academic record (CGPA: 9.04/10). 
+              My passion lies in creating innovative solutions through full-stack development and machine learning.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              With over 200 LeetCode problems and 100+ GeeksForGeeks challenges solved, I've 
-              honed my algorithmic thinking and problem-solving skills. My professional experience 
-              includes working with cloud technologies like AWS and Azure, managing deployments, 
-              and implementing security frameworks.
+              I have hands-on experience with the MERN stack, having developed comprehensive platforms like MediSinCare and 
+              a Hostel Management System. My expertise extends to data analytics, where I've worked with tools like Tableau 
+              and Power BI to derive meaningful insights from large datasets.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              I'm always eager to learn new technologies and contribute to innovative projects 
-              that make a real impact.
+              Beyond academics, I'm passionate about sports, particularly badminton and cricket, and have achieved notable 
+              victories in regional tournaments.
             </p>
           </div>
 
@@ -39,32 +37,32 @@ const About = () => {
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Code className="text-blue-600" size={32} />
               </div>
-              <h4 className="font-semibold mb-2">Problem Solving</h4>
-              <p className="text-gray-600 text-sm">300+ coding challenges solved across platforms</p>
+              <h4 className="font-semibold mb-2">Full Stack Development</h4>
+              <p className="text-gray-600 text-sm">MERN stack expertise with responsive web applications</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Cloud className="text-purple-600" size={32} />
               </div>
-              <h4 className="font-semibold mb-2">Cloud Computing</h4>
-              <p className="text-gray-600 text-sm">AWS & Azure deployment and management</p>
+              <h4 className="font-semibold mb-2">Machine Learning</h4>
+              <p className="text-gray-600 text-sm">Predictive analytics and neural networks</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Database className="text-green-600" size={32} />
               </div>
-              <h4 className="font-semibold mb-2">Web Development</h4>
-              <p className="text-gray-600 text-sm">Full-stack development with modern frameworks</p>
+              <h4 className="font-semibold mb-2">Data Analytics</h4>
+              <p className="text-gray-600 text-sm">Power BI, Tableau, and statistical analysis</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center">
               <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Cpu className="text-orange-600" size={32} />
               </div>
-              <h4 className="font-semibold mb-2">System Design</h4>
-              <p className="text-gray-600 text-sm">Scalable architecture and deployment strategies</p>
+              <h4 className="font-semibold mb-2">Leadership</h4>
+              <p className="text-gray-600 text-sm">Project lead managing teams of 15+ members</p>
             </div>
           </div>
         </div>

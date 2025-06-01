@@ -6,41 +6,41 @@ const Skills = () => {
     {
       title: 'Programming Languages',
       skills: [
+        { name: 'Python', level: 95 },
         { name: 'JavaScript', level: 90 },
-        { name: 'Python', level: 85 },
+        { name: 'C/C++', level: 85 },
         { name: 'Java', level: 80 },
-        { name: 'TypeScript', level: 85 },
-        { name: 'C++', level: 75 },
+        { name: 'HTML5/CSS3', level: 90 },
       ],
     },
     {
-      title: 'Web Technologies',
+      title: 'Web Development',
       skills: [
-        { name: 'React', level: 90 },
+        { name: 'MERN Stack', level: 90 },
+        { name: 'MongoDB', level: 85 },
+        { name: 'Express.js', level: 85 },
         { name: 'Node.js', level: 85 },
-        { name: 'HTML/CSS', level: 95 },
-        { name: 'Express.js', level: 80 },
-        { name: 'MongoDB', level: 75 },
+        { name: 'RESTful APIs', level: 80 },
       ],
     },
     {
-      title: 'Cloud & DevOps',
+      title: 'Data Science & ML',
       skills: [
-        { name: 'AWS', level: 85 },
-        { name: 'Azure', level: 80 },
-        { name: 'Docker', level: 75 },
-        { name: 'Kubernetes', level: 70 },
-        { name: 'CI/CD', level: 80 },
+        { name: 'Machine Learning', level: 85 },
+        { name: 'Predictive Analytics', level: 80 },
+        { name: 'Statistical Analysis', level: 80 },
+        { name: 'Data Visualization', level: 85 },
+        { name: 'Neural Networks', level: 75 },
       ],
     },
     {
-      title: 'Tools & Frameworks',
+      title: 'Tools & Technologies',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'Squarespace', level: 85 },
-        { name: 'DOSS Framework', level: 80 },
-        { name: 'WAF', level: 75 },
-        { name: 'ADF Azure', level: 80 },
+        { name: 'Power BI', level: 90 },
+        { name: 'Tableau', level: 85 },
+        { name: 'Git/GitHub', level: 90 },
+        { name: 'AWS', level: 75 },
+        { name: 'MATLAB/Simulink', level: 80 },
       ],
     },
   ];
@@ -78,34 +78,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold mb-8">Problem Solving Achievements</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-8 rounded-lg shadow-lg">
-              <h4 className="text-3xl font-bold mb-2">200+</h4>
-              <p className="text-lg mb-4">LeetCode Problems Solved</p>
-              <p className="text-sm opacity-90">
-                Consistent problem-solving practice with focus on algorithms and data structures
-              </p>
-              {/* PLACE YOUR LEETCODE PROFILE LINK HERE */}
-              <a href="#" className="inline-block mt-4 text-white underline hover:no-underline">
-                View Profile →
-              </a>
-            </div>
-            <div className="bg-gradient-to-r from-green-500 to-teal-500 text-white p-8 rounded-lg shadow-lg">
-              <h4 className="text-3xl font-bold mb-2">100+</h4>
-              <p className="text-lg mb-4">GeeksForGeeks Problems</p>
-              <p className="text-sm opacity-90">
-                Advanced problem-solving and competitive programming challenges
-              </p>
-              {/* PLACE YOUR GEEKSFORGEEKS PROFILE LINK HERE */}
-              <a href="#" className="inline-block mt-4 text-white underline hover:no-underline">
-                View Profile →
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>

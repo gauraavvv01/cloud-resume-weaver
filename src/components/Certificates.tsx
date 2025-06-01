@@ -12,38 +12,73 @@ import { Award, ExternalLink } from 'lucide-react';
 const Certificates = () => {
   const certificates = [
     {
-      title: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
+      title: 'Google Certified: Bits & Bytes of Computer Networking',
+      issuer: 'Google (Coursera)',
       date: '2024',
       image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop',
       url: '#', // PLACE YOUR CERTIFICATE URL HERE
     },
     {
-      title: 'Microsoft Azure Fundamentals',
-      issuer: 'Microsoft',
+      title: 'NPTEL Cloud Computing',
+      issuer: 'IIT Kharagpur',
       date: '2024',
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop',
       url: '#', // PLACE YOUR CERTIFICATE URL HERE
     },
     {
-      title: 'React Developer Certification',
-      issuer: 'Meta',
-      date: '2023',
+      title: 'Advanced Python Certification',
+      issuer: 'VIT Bhopal',
+      date: '2024',
       image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop',
       url: '#', // PLACE YOUR CERTIFICATE URL HERE
     },
     {
-      title: 'Python for Data Science',
-      issuer: 'IBM',
-      date: '2023',
+      title: 'Business Intelligence in Power BI',
+      issuer: 'Skill Nation',
+      date: '2024',
       image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop',
       url: '#', // PLACE YOUR CERTIFICATE URL HERE
     },
     {
-      title: 'Machine Learning Specialization',
-      issuer: 'Stanford University',
-      date: '2023',
+      title: 'MATLAB and Simulink Certification',
+      issuer: 'VIT Bhopal',
+      date: '2024',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop',
+      url: '#', // PLACE YOUR CERTIFICATE URL HERE
+    },
+    {
+      title: 'Space Robotics Internship',
+      issuer: 'Kodacy',
+      date: '2024',
+      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
+      url: '#', // PLACE YOUR CERTIFICATE URL HERE
+    },
+    {
+      title: 'Data Analytics Certification',
+      issuer: 'GeeksforGeeks',
+      date: '2024',
+      image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop',
+      url: '#', // PLACE YOUR CERTIFICATE URL HERE
+    },
+    {
+      title: 'Machine Learning Course',
+      issuer: 'Udemy',
+      date: '2024',
+      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop',
+      url: '#', // PLACE YOUR CERTIFICATE URL HERE
+    },
+    {
+      title: 'IBM Blockchain Developer',
+      issuer: 'IBM',
+      date: '2024',
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop',
+      url: '#', // PLACE YOUR CERTIFICATE URL HERE
+    },
+    {
+      title: 'IBM Blockchain Foundation',
+      issuer: 'IBM',
+      date: '2024',
+      image: 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=300&fit=crop',
       url: '#', // PLACE YOUR CERTIFICATE URL HERE
     },
   ];
@@ -52,7 +87,7 @@ const Certificates = () => {
     <section id="certificates" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Certifications & Achievements</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Certifications</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional certifications and achievements that validate my expertise in various technologies.
           </p>
