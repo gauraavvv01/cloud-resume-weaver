@@ -1,54 +1,54 @@
 
 import React from 'react';
-import { ExternalLink, Github, Cloud, Code, Database } from 'lucide-react';
+import { ExternalLink, Github, Heart, Building, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'Cloud Infrastructure Management',
-      description: 'Comprehensive cloud management solution using AWS and Azure services with automated deployment pipelines.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&h=300&fit=crop',
-      technologies: ['AWS', 'Azure', 'Docker', 'Kubernetes', 'Terraform'],
+      title: 'MedisinCare',
+      description: 'Comprehensive healthcare management system with patient records, appointment scheduling, and medical inventory management.',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
       features: [
-        'Multi-cloud deployment strategy',
-        'Automated CI/CD pipelines',
-        'Infrastructure as Code',
-        'Security best practices implementation'
+        'Patient registration and records management',
+        'Doctor appointment scheduling',
+        'Medical inventory tracking',
+        'Prescription management system'
       ],
       liveUrl: '#', // PLACE YOUR PROJECT LIVE URL HERE
       githubUrl: '#', // PLACE YOUR PROJECT GITHUB URL HERE
-      icon: Cloud,
+      icon: Heart,
     },
     {
-      title: 'Web Application with Squarespace Integration',
-      description: 'Modern web application with custom deployment through Squarespace and advanced security features.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop',
-      technologies: ['React', 'Node.js', 'Squarespace', 'WAF', 'DOSS'],
+      title: 'Hostel Management System',
+      description: 'Complete hostel management solution for student accommodation with room allocation, fee management, and visitor tracking.',
+      image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=500&h=300&fit=crop',
+      technologies: ['React', 'Node.js', 'MySQL', 'Express', 'Bootstrap'],
       features: [
-        'Responsive web design',
-        'Squarespace CMS integration',
-        'Web Application Firewall setup',
-        'Distributed object storage'
+        'Student registration and room allocation',
+        'Fee management and payment tracking',
+        'Visitor management system',
+        'Maintenance request handling'
       ],
       liveUrl: '#', // PLACE YOUR PROJECT LIVE URL HERE
       githubUrl: '#', // PLACE YOUR PROJECT GITHUB URL HERE
-      icon: Code,
+      icon: Building,
     },
     {
-      title: 'Data Pipeline with ADF Azure',
-      description: 'Scalable data processing pipeline using Azure Data Factory for ETL operations and real-time analytics.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      technologies: ['Azure Data Factory', 'Python', 'SQL', 'Power BI', 'Azure Storage'],
+      title: 'Crop Disease Prediction',
+      description: 'Machine learning-based system for predicting crop diseases using image recognition and providing treatment recommendations.',
+      image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&h=300&fit=crop',
+      technologies: ['Python', 'TensorFlow', 'OpenCV', 'Flask', 'Scikit-learn'],
       features: [
-        'Real-time data processing',
-        'Automated ETL workflows',
-        'Data visualization dashboards',
-        'Scalable architecture design'
+        'Image-based disease detection',
+        'Machine learning classification',
+        'Treatment recommendations',
+        'Crop health monitoring dashboard'
       ],
       liveUrl: '#', // PLACE YOUR PROJECT LIVE URL HERE
       githubUrl: '#', // PLACE YOUR PROJECT GITHUB URL HERE
-      icon: Database,
+      icon: Leaf,
     },
   ];
 
@@ -58,7 +58,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my recent work in cloud computing, web development, and data engineering.
+            A showcase of my key projects in healthcare, management systems, and machine learning applications.
           </p>
         </div>
 
@@ -138,8 +138,8 @@ const Projects = () => {
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Want to see more?</h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              These are just a few highlights from my portfolio. I have more projects showcasing 
-              various technologies and problem-solving approaches.
+              These are my key projects showcasing healthcare solutions, management systems, 
+              and machine learning applications. Each project demonstrates different aspects of my technical expertise.
             </p>
             <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3" asChild>
               {/* PLACE YOUR GITHUB PROFILE LINK HERE */}

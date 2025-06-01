@@ -1,9 +1,50 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const roles = [
+    'Web Developer',
+    'ML Engineer', 
+    'Badminton Player',
+    'Content Writer'
+  ];
+  
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [typeSpeed, setTypeSpeed] = useState(150);
+
+  useEffect(() => {
+    const currentRole = roles[currentRoleIndex];
+    
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing
+        if (displayText.length < currentRole.length) {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        } else {
+          // Finished typing, wait then start deleting
+          setTimeout(() => setIsDeleting(true), 2000);
+        }
+      } else {
+        // Deleting
+        if (displayText.length > 0) {
+          setDisplayText(displayText.slice(0, -1));
+          setTypeSpeed(50);
+        } else {
+          // Finished deleting, move to next role
+          setIsDeleting(false);
+          setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+          setTypeSpeed(150);
+        }
+      }
+    }, typeSpeed);
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, currentRoleIndex, typeSpeed, roles]);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +70,15 @@ const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          <div className="text-xl md:text-2xl text-gray-600 mb-8 h-8">
+            I am{' '}
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-semibold">
+              {displayText}
+              <span className="animate-pulse">|</span>
+            </span>
+          </div>
+
+          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Software Development Engineer specializing in Cloud Technologies, 
             Web Development, and Problem Solving
           </p>
