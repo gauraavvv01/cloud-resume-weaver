@@ -6,53 +6,53 @@ const Skills = () => {
     {
       title: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 95 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'C/C++', level: 85 },
-        { name: 'Java', level: 80 },
-        { name: 'HTML5/CSS3', level: 90 },
+        'Python',
+        'JavaScript',
+        'C/C++',
+        'Java',
+        'HTML5/CSS3',
       ],
     },
     {
       title: 'Web Development',
       skills: [
-        { name: 'MERN Stack', level: 90 },
-        { name: 'MongoDB', level: 85 },
-        { name: 'Express.js', level: 85 },
-        { name: 'React', level: 90 },
-        { name: 'Node.js', level: 85 },
-        { name: 'RESTful APIs', level: 80 },
+        'MERN Stack',
+        'MongoDB',
+        'Express.js',
+        'React',
+        'Node.js',
+        'RESTful APIs',
       ],
     },
     {
       title: 'Data Science & ML',
       skills: [
-        { name: 'Machine Learning', level: 85 },
-        { name: 'Predictive Analytics', level: 80 },
-        { name: 'Statistical Analysis', level: 80 },
-        { name: 'Data Visualization', level: 85 },
-        { name: 'Python Libraries', level: 85 },
+        'Machine Learning',
+        'Predictive Analytics',
+        'Statistical Analysis',
+        'Data Visualization',
+        'Python Libraries',
       ],
     },
     {
       title: 'Cloud & Tools',
       skills: [
-        { name: 'AWS', level: 80 },
-        { name: 'Azure', level: 75 },
-        { name: 'Squarespace', level: 85 },
-        { name: 'WAF', level: 80 },
-        { name: 'DOSS', level: 75 },
-        { name: 'ADF', level: 80 },
-        { name: 'Azure APIM', level: 75 },
-        { name: 'Git/GitHub', level: 90 },
-        { name: 'MATLAB/Simulink', level: 80 },
+        'AWS',
+        'Azure',
+        'Squarespace',
+        'WAF',
+        'DOSS',
+        'ADF',
+        'Azure APIM',
+        'Git/GitHub',
+        'MATLAB/Simulink',
       ],
     },
     {
       title: 'Data Analytics Tools',
       skills: [
-        { name: 'Power BI', level: 90 },
-        { name: 'Tableau', level: 85 },
+        'Power BI',
+        'Tableau',
       ],
     },
   ];
@@ -78,19 +78,10 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div key={index} className="bg-gray-900/50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700 hover:border-orange-500">
               <h3 className="text-xl font-bold mb-6 text-center text-white">{category.title}</h3>
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    <div className="flex justify-between mb-2">
-                      <span className="font-medium text-gray-300">{skill.name}</span>
-                      <span className="text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="bg-gray-700 rounded-full h-3">
-                      <div
-                        className="bg-gradient-to-r from-orange-500 to-orange-600 h-3 rounded-full transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                  <div key={skillIndex} className="bg-gray-800/50 px-4 py-3 rounded-lg border border-gray-600 hover:border-orange-400 transition-colors duration-200">
+                    <span className="font-medium text-gray-300">{skill}</span>
                   </div>
                 ))}
               </div>
