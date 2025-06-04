@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Skills = () => {
@@ -44,10 +43,15 @@ const Skills = () => {
         { name: 'DOSS', level: 75 },
         { name: 'ADF', level: 80 },
         { name: 'Azure APIM', level: 75 },
-        { name: 'Power BI', level: 90 },
-        { name: 'Tableau', level: 85 },
         { name: 'Git/GitHub', level: 90 },
         { name: 'MATLAB/Simulink', level: 80 },
+      ],
+    },
+    {
+      title: 'Data Analytics Tools',
+      skills: [
+        { name: 'Power BI', level: 90 },
+        { name: 'Tableau', level: 85 },
       ],
     },
   ];

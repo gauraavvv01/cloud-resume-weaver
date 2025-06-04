@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Download, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -6,9 +5,10 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   const roles = [
     'Web Developer',
-    'ML Engineer', 
-    'Badminton Player',
-    'Content Writer'
+    'Cloud Engineer', 
+    'ML Enthusiast',
+    'Content Writer',
+    'Badminton Player'
   ];
   
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
