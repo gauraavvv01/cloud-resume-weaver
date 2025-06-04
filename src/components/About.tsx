@@ -4,8 +4,14 @@ import { Code, Database, Cloud, Cpu } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-gray-800 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-40 right-40 w-60 h-60 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
+        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-orange-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">About Me</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -33,33 +39,33 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-blue-500">
-              <div className="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Code className="text-blue-400" size={32} />
+            <div className="bg-gray-900/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-orange-500">
+              <div className="bg-orange-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Code className="text-orange-500" size={32} />
               </div>
               <h4 className="font-semibold mb-2 text-white">Full Stack Development</h4>
               <p className="text-gray-400 text-sm">MERN stack expertise with responsive web applications</p>
             </div>
 
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-purple-500">
-              <div className="bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Cloud className="text-purple-400" size={32} />
+            <div className="bg-gray-900/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-orange-500">
+              <div className="bg-orange-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Cloud className="text-orange-500" size={32} />
               </div>
               <h4 className="font-semibold mb-2 text-white">Machine Learning</h4>
               <p className="text-gray-400 text-sm">Predictive analytics and data science</p>
             </div>
 
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-green-500">
-              <div className="bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Database className="text-green-400" size={32} />
+            <div className="bg-gray-900/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-orange-500">
+              <div className="bg-orange-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Database className="text-orange-500" size={32} />
               </div>
               <h4 className="font-semibold mb-2 text-white">Data Analytics</h4>
               <p className="text-gray-400 text-sm">Power BI, Tableau, and statistical analysis</p>
             </div>
 
-            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-orange-500">
-              <div className="bg-orange-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Cpu className="text-orange-400" size={32} />
+            <div className="bg-gray-900/50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-700 hover:border-orange-500">
+              <div className="bg-orange-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Cpu className="text-orange-500" size={32} />
               </div>
               <h4 className="font-semibold mb-2 text-white">Cloud Computing</h4>
               <p className="text-gray-400 text-sm">AWS, Azure, and cloud deployment solutions</p>

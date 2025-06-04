@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Building2, Calendar, MapPin } from 'lucide-react';
 
@@ -39,8 +40,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="py-20 bg-gray-900 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-40 left-40 w-80 h-80 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-2000"></div>
+        <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-orange-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Work Experience</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -51,20 +58,20 @@ const Experience = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 to-orange-600"></div>
             
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative flex items-start">
                   {/* Timeline dot */}
-                  <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-800 shadow-lg"></div>
+                  <div className="absolute left-6 w-4 h-4 bg-orange-500 rounded-full border-4 border-gray-900 shadow-lg"></div>
                   
                   {/* Content */}
-                  <div className="ml-20 bg-gray-900 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700 w-full">
+                  <div className="ml-20 bg-gray-800/50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700 hover:border-orange-500 w-full">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
                         <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
-                        <div className="flex items-center text-blue-400 mb-2">
+                        <div className="flex items-center text-orange-400 mb-2">
                           <Building2 size={16} className="mr-2" />
                           <span className="font-medium">{exp.company}</span>
                         </div>
@@ -84,7 +91,7 @@ const Experience = () => {
                     <ul className="space-y-2">
                       {exp.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="text-gray-300 flex items-start">
-                          <span className="text-blue-400 mr-2 mt-2">•</span>
+                          <span className="text-orange-500 mr-2 mt-2">•</span>
                           <span>{item}</span>
                         </li>
                       ))}

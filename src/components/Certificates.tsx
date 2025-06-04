@@ -104,8 +104,14 @@ const Certificates = () => {
   ];
 
   return (
-    <section id="certificates" className="py-20 bg-gray-800">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="certificates" className="py-20 bg-gray-900 relative overflow-hidden">
+      {/* Animated background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-orange-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-2000"></div>
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Certifications</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -125,7 +131,7 @@ const Certificates = () => {
             <CarouselContent className="-ml-2 md:-ml-4">
               {certificates.map((cert, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                  <div className="bg-gray-900 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-700 hover:border-blue-500">
+                  <div className="bg-gray-800/50 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group border border-gray-700 hover:border-orange-500">
                     <div className="relative overflow-hidden">
                       <img
                         src={cert.image}
@@ -133,7 +139,7 @@ const Certificates = () => {
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                       <div className="absolute top-4 right-4 bg-gray-900/90 p-2 rounded-full">
-                        <Award className="text-blue-400" size={20} />
+                        <Award className="text-orange-500" size={20} />
                       </div>
                     </div>
                     
@@ -146,7 +152,7 @@ const Certificates = () => {
                         href={cert.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300"
+                        className="inline-flex items-center text-orange-500 hover:text-orange-400 transition-colors duration-300"
                       >
                         <ExternalLink size={16} className="mr-2" />
                         View Certificate
@@ -156,8 +162,8 @@ const Certificates = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex bg-gray-800 border-gray-600 text-white hover:bg-gray-700" />
-            <CarouselNext className="hidden md:flex bg-gray-800 border-gray-600 text-white hover:bg-gray-700" />
+            <CarouselPrevious className="hidden md:flex bg-gray-800 border-gray-600 text-white hover:bg-gray-700 hover:border-orange-500" />
+            <CarouselNext className="hidden md:flex bg-gray-800 border-gray-600 text-white hover:bg-gray-700 hover:border-orange-500" />
           </Carousel>
         </div>
       </div>
