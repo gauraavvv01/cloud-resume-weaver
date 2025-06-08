@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/c7f2205a-92ef-4ae8-b2e1-9e98c9ac4b67
+**URL**: [https://lovable.dev/projects/c7f2205a-92ef-4ae8-b2e1-9e98c9ac4b67](https://cloud-resume-weaver.vercel.app/)
 
 ## How can I edit this code?
 
